@@ -4,7 +4,7 @@ function calcularSubtotal(itens) {
         subtotal += item.preco * item.quantidade;
     }
     return subtotal;
-}
+}  //llllll
   
 function contarItens(itens) {
 
