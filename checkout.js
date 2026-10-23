@@ -14,3 +14,11 @@ function aplicarCupom(subtotal, codigo) {
   
     return Math.min(desconto, valor);
   }
+
+  function finalizarCompra(itens, codigoCupom) {
+    const subtotal = calcularSubtotal(itens);
+    const desconto = aplicarCupom(subtotal, codigoCupom);
+    const total = Math.max(0, subtotal - desconto);
+  
+    return { subtotal, desconto, total };
+  }
