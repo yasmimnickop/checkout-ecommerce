@@ -1,7 +1,7 @@
 function calcularSubtotal(itens) {
     let subtotal = 0;
-    fot (let i = 0; i < itens length; i++) {
-        subtotal += itens[i].preco * itens[i].quantidade;
+    for (const item of itens) {
+        subtotal += item.preco * item.quantidade;
     }
     return subtotal;
 }
