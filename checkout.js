@@ -7,8 +7,15 @@ function calcularSubtotal(itens) {
 }
   
 function contarItens(itens) {
+    let total = 0;
 
-}
+    for (const item of itens) {
+        total += item.quantidade;
+    }
+    return total;
+} 
+
+
     
 function aplicarCupom(subtotal, codigo) {
 
